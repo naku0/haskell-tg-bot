@@ -1,32 +1,27 @@
 name:                tg-project
 version:             0.1.0.0
-github:              "githubuser/tg-project"
+github:              "naku0/haskell-tg-bot"
 license:             BSD-3-Clause
-author:              "naku0"
 maintainer:          "example@example.com"
-copyright:           "2025 Author name here"
+copyright:           "2025 naku0"
 
 extra-source-files:
 - README.md
 
-# Metadata used when publishing your package
-# synopsis:            Short description of your package
-# category:            Web
-
-# To avoid duplicated efforts in documentation and dealing with the
-# complications of embedding Haddock markup inside cabal files, it is
-# common to point users to the README.md file.
-description:         Please see the README on GitHub at <https://github.com/githubuser/tg-project#readme>
+description:         Please see the README on GitHub at <https://github.com/naku0/haskell-tg-bot.git>
 
 dependencies:
   - base >= 4.7 && < 5
-  - aeson       # JSON
-  - text        # strings
-  - bytestring  # binary data
-  - vector      # vector massives
+  - text
+  - bytestring
+  - aeson < 2.2         
+  - time
+  - random
+  - http-conduit
   - telegram-bot-simple
-  - telegram-bot-api
+  - lens
   - transformers
+  - containers
 
 ghc-options:
 - -Wall

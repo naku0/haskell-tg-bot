@@ -3,11 +3,17 @@
 # For more information, please see the documentation at:
 #   https://docs.haskellstack.org/en/stable/topics/lock_files
 
-packages: []
+packages:
+- completed:
+    hackage: twitter-conduit-0.6.1@sha256:819d9ede6da5124a97900581706024149c70a87248f54b3ee6cc9a3b7aaaaa3e,3845
+    pantry-tree:
+      sha256: 8d2bda3f610223320c131b5c61e8029c87ab8adce1a36c0f15a386b2e41879ab
+      size: 2453
+  original:
+    hackage: twitter-conduit-0.6.1
 snapshots:
 - completed:
-    sha256: 2763632e4c4094ce12f5ae12b22f524cdc6453b6b19007ff164a37fd9d2ea829
-    size: 683819
-    url: https://raw.githubusercontent.com/commercialhaskell/stackage-snapshots/master/lts/23/17.yaml
-  original:
-    url: https://raw.githubusercontent.com/commercialhaskell/stackage-snapshots/master/lts/23/17.yaml
+    sha256: 6d1532d40621957a25bad5195bfca7938e8a06d923c91bc52aa0f3c41181f2d4
+    size: 619204
+    url: https://raw.githubusercontent.com/commercialhaskell/stackage-snapshots/master/lts/19/33.yaml
+  original: lts-19.33

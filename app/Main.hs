@@ -12,8 +12,6 @@ main = do
   content <- readFile "./.env"
   let tgKeyRaw = extractEnv content "TG_API"
       tgKey = Token (T.pack tgKeyRaw)
-      conf = BotConfig{ token = tgKey, 
-                        botWelcomeMessage =  "Hi", 
-                        botHelpMessage = "/help"
-                        }
+      conf = BotConfig{ token = tgKey }
+  putStrLn "Бот запущен!"
   run conf
